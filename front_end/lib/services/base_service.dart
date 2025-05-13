@@ -20,7 +20,6 @@ class BaseService {
     required String path,
     required Object requestData,
   }) async {
-    // final authToken = navigatorKey.currentContext!.read<BaseViewModel>().authToken;
     var url = Uri.parse("$dataServiceRoot/$path");
     var response = await http.post(
       url,

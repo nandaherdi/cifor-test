@@ -1,3 +1,3 @@
-const String developmentServiceRoot = "https://localhost:44323";
-const String developmentDataServiceRoot = "$developmentServiceRoot/api/";
+const String developmentServiceRoot = "http://192.168.18.57:5000";
+const String developmentDataServiceRoot = "$developmentServiceRoot/api";
 String dataServiceRoot = developmentDataServiceRoot;

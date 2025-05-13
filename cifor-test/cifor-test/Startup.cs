@@ -30,7 +30,20 @@ namespace cifor_test
             services.AddControllers();
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowFlutterApp",
+                    builder =>
+                    {
+                        builder.WithOrigins(
+                            "http://localhost:3000",
+                            "http://127.0.0.1:3000",
+                            "http://192.168.18.57:5000"
+                        )
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                    });
+            });
         }
 
 
@@ -43,6 +56,8 @@ namespace cifor_test
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors("AllowFlutterApp");
 
             app.UseRouting();
 
