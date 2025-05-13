@@ -38,7 +38,7 @@ namespace cifor_test
                         builder.WithOrigins(
                             "http://localhost:3000",
                             "http://127.0.0.1:3000",
-                            "http://192.168.18.57:5000"
+                            "http://192.168.20.60:5000"
                         )
                         .AllowAnyHeader()
                         .AllowAnyMethod();

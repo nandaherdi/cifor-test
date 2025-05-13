@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("cifor-test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+895a91d3b5bcde07e508cab0d9df55f8d2c7e662")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd878fd2bb4368fd3e215774cfc59fa56eef65ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("cifor-test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("cifor-test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
